@@ -8,5 +8,8 @@
     "start": "node index"
   },
   "author": "Vivek Sharma",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
