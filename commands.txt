@@ -1,0 +1,9 @@
+- To install express generator globally 
+        $ sudo npm install -g express-generator
+- To start generator
+        $ express conFusionServer
+- To install dependancies 
+        $ cd conFusionServer
+        $ npm install
+- To start node server 
+        $ npm start
