@@ -7,3 +7,36 @@
         $ npm install
 - To start node server 
         $ npm start
+
+
+
+- Mongodb setup commands
+    - install mongodb 
+        $ brew tap mongodb/brew
+        $ brew install mongodb-community@5.0
+    - start mongodb
+        $ brew services start mongodb-community@4.2
+    - configure mongodb to pic data from a specific location
+        $ mongod --dbpath=<folder path> --bind_ip 127.0.0.1
+    - to run mongodb server 
+        $ mongo
+    - to create and use database
+        $ use <dbname>
+    - to see other commands 
+        $ db.help
+    - see current database 
+        $ db
+    - create or see collection
+        $ db.<colletion name>
+    - insert JSON record/document in collection
+        $ db.<Collection name>.insert(<JSON document>)
+    - view all documents from a collection
+        $ db.<Collection name>.find()
+    - view all collection in pretty format
+        $ db.<collection name>.find().pretty()
+    - create unique id that contains <current timestamp><machine Id><processor Id><increment value >
+    - we can see a sample id timestamp as follows
+        $ var id = new ObjectId();
+        $ id.getTimestamp()
+    -To Quit mongo rappel
+        $ exit
